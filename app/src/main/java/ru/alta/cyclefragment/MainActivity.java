@@ -9,9 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements SampleCallback {
 
-    String myMessage = "Stack Overflow is cool!";
-  //  Bundle bundle = new Bundle();
-
+   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,14 +18,9 @@ public class MainActivity extends AppCompatActivity implements SampleCallback {
     }
 
     public void onClick(View v) {
-
-        BlankFragment fragment = new BlankFragment();
-        Bundle bundle = new Bundle();
-//        bundle.putInt(key, value);
-//        fragment.setArguments(bundle);
-//        Fragment frag1 = getFragmentManager().findFragmentById(R.id.fragment1);
-//        ((TextView) frag1.getView().findViewById(R.id.textView))
-//                .setText("Hello2");
+        Fragment frag1 = getFragmentManager().findFragmentById(R.id.fragment1);
+        ((TextView) frag1.getView().findViewById(R.id.textView))
+                .setText("Hello2");
 
     }
 
