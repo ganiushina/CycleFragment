@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements SampleCallback {
 
-   
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements SampleCallback {
     }
 
     public void onClick(View v) {
-        Fragment frag1 = getFragmentManager().findFragmentById(R.id.fragment1);
+        Fragment frag1 = getFragmentManager().findFragmentById(R.id.fragment1); // не понимаю, как передать строку во фрагмент. Здест ошибка, так не работает :(
         ((TextView) frag1.getView().findViewById(R.id.textView))
                 .setText("Hello2");
 
